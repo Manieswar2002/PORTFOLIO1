@@ -40,9 +40,9 @@
         
     if (!sessionStorage.getItem('welcomeShown')) {
       setTimeout(() => {
-        document.getElementById('welcome-screen').style.display = 'none'; // Hide welcome screen
-        sessionStorage.setItem('welcomeShown', true); // Store flag in sessionStorage
-        window.location.reload(); // Refresh the page
+        document.getElementById('welcome-screen').style.display = 'none'; 
+        sessionStorage.setItem('welcomeShown', true);
+        window.location.reload();
       }, 3000);
     } else {
       document.getElementById('welcome-screen').style.display = 'none';

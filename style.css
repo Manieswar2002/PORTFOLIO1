@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: white;
-    background-image: url('back.jpg'); /* Replace with your image */
+    background-image: url('back.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -33,14 +33,14 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px; /* Space below the icon and line */
+    margin-bottom: 20px; 
     animation: fade-in-down 1s ease-out;
 }
 
 .diamond-icon {
     font-size: 1.8em;
 }
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
     color: red;
     background: yellow;
   }
@@ -52,10 +52,10 @@ header {
   
 
 .icon-line {
-    width: 700px; /* Vertical line */
-    height: 3px; /* Adjust height as needed */
+    width: 700px;
+    height: 3px;
     background-color: white;
-    margin-top: 5px; /* Space between icon and line */
+    margin-top: 5px;
     animation: line-grow 1s ease-out;
 }
 
@@ -74,7 +74,7 @@ h1 {
     margin-bottom: 10px;
     letter-spacing: 1px;
     animation: fade-in 1s ease-out 0.3s;
-    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; /* Added text focus animation */
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; 
 }
 .instruction {
     animation: text-pop-up-top 0.8s cubic-bezier(0.460, 0.030, 0.520, 0.960) both;
@@ -83,7 +83,7 @@ h1 {
     animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 .welcome, .instruction, .tagline {
-    animation: fade-in-up 1s ease-out 0.5s; /* Delay more */
+    animation: fade-in-up 1s ease-out 0.5s;
 }
 
 @keyframes fade-in-up {
@@ -122,7 +122,7 @@ h1 {
 .instruction {
     font-size: 0.9em;
     line-height: 1.4;
-    margin-bottom: 20px; /* Space above nav */
+    margin-bottom: 20px; 
 }
 
 nav {
@@ -140,7 +140,7 @@ nav a {
     border: 2px solid white;
     border-radius: 3px;
 
-    transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s; /* Added box-shadow transition */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s; 
     font-size: 0.85em;
     font-weight: 400;
 }
@@ -151,7 +151,7 @@ nav a:hover {
     transform: scale(1.1);
     color: white;
         cursor: pointer;
-        background: linear-gradient(180deg, #6A0DAD, #9A4DFF); /* Purple gradient */
+        background: linear-gradient(180deg, #6A0DAD, #9A4DFF);
              border: 2px  white solid;
                 box-shadow: 1px 1px 10px 3px  #6A0DAD;
 
@@ -166,7 +166,6 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: rgba(255, 255, 255, 0.9); */
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     z-index: 999;
@@ -174,16 +173,16 @@ nav a:hover {
   }
   @keyframes fade-in-out {
     0% {
-      opacity: 0; /* Fully transparent */
+      opacity: 0; 
     }
     25% {
-      opacity: 1; /* Fully visible */
+      opacity: 1; 
     }
     75% {
-      opacity: 1; /* Stay fully visible */
+      opacity: 1; 
     }
     100% {
-      opacity: 0; /* Fade out */
+      opacity: 0; 
     }
   }
 
@@ -191,7 +190,7 @@ nav a:hover {
     font-style: italic;
     font-size: 1.2em;
     font-weight: 300;
-    margin-top: 50px; /* Space above tagline */
+    margin-top: 50px; 
     animation: jello-horizontal 0.9s both;
 }
 
@@ -203,18 +202,18 @@ nav a:hover {
 }
 
 .diamond-wrapper {
-    width: 50px; /* Adjust size as needed */
-    height: 50px; /* Adjust size as needed */
-    border-radius: 50%; /* Make it a circle */
-    border: 2px solid white; /* Add a border */
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    border: 2px solid white; 
     display: flex;
-    justify-content: center; /* Center the icon horizontally */
-    align-items: center; /* Center the icon vertically */
+    justify-content: center; 
+    align-items: center; 
     animation: border-pulse 2s  ease-in-out;
 }
 
 .diamond-icon {
-    font-size: 2em; /* Adjust icon size if needed */
+    font-size: 2em; 
     animation: diamond-spin 2s linear ;
 }
 
@@ -228,11 +227,6 @@ nav a:hover {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-
-
-
-
-
 @keyframes text-focus-in {
     0% {
         filter: blur(12px);
@@ -311,19 +305,19 @@ nav a:hover {
   }
   @media (max-width: 900px) {
     .container {
-        max-width: 90%; /* Make container take up more width */
+        max-width: 90%; 
     }
 
     .line {
-        width: 90%; /* Lines also take up more width */
+        width: 90%; 
     }
     .icon-line{
         width: 2px;
         height: 20px;
     }
     nav a {
-        font-size: 0.75em; /* Smaller font size for nav links */
-        padding: 4px 8px; /* Smaller padding */
+        font-size: 0.75em; 
+        padding: 4px 8px; 
         margin: 0 5px;
 
     }
@@ -344,8 +338,6 @@ nav a:hover {
         height: 40px;
     }
 }
-
-/* For even smaller screens (e.g., mobile phones) */
 @media (max-width: 600px) {
     .container {
         max-width: 95%;
@@ -356,12 +348,12 @@ nav a:hover {
     }
 
     nav {
-        flex-direction: column; /* Stack nav items vertically */
+        flex-direction: column;
         align-items: center;
     }
 
     nav a {
-        margin: 5px 0; /* Add vertical margin between stacked links */
+        margin: 5px 0;
         width: 100%;
         text-align: center;
         border-radius: 5px;
@@ -392,31 +384,31 @@ nav a:hover {
 
 @media (max-width: 768px) {
     body {
-      font-size: 16px; /* Adjust text size for smaller screens */
+      font-size: 16px;
     }
 
     #welcome-screen {
-      padding: 20px; /* Adjust padding for smaller screens */
+      padding: 20px;
     }
 
     #main-content {
-      padding: 15px; /* Reduce padding on smaller screens */
+      padding: 15px;
     }
 
     h1 {
-      font-size: 28px; /* Adjust heading size for smaller screens */
+      font-size: 28px;
     }
 
     p {
-      font-size: 14px; /* Adjust paragraph text for smaller screens */
+      font-size: 14px; 
     }
   }
 
   @media (max-width: 480px) {
     #welcome-screen {
-      flex-direction: column; /* Stack content vertically on very small screens */
+      flex-direction: column; 
       justify-content: center;
-      padding: 10px; /* Adjust padding */
+      padding: 10px; 
     }
 
     h1 {
