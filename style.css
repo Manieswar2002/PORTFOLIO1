@@ -389,14 +389,26 @@ nav a:hover {
     }
 }
 
-@media (max-width: 768px) {
 
+@media (max-width: 768px) {
+    body {
+      font-size: 16px; /* Adjust text size for smaller screens */
+    }
 
     #welcome-screen {
-      padding: 10px; /* Add some padding for smaller screens */
+      padding: 20px; /* Adjust padding for smaller screens */
     }
+
+    #main-content {
+      padding: 15px; /* Reduce padding on smaller screens */
+    }
+
     h1 {
-      font-size: 24px; /* Make the heading a bit smaller */
+      font-size: 28px; /* Adjust heading size for smaller screens */
+    }
+
+    p {
+      font-size: 14px; /* Adjust paragraph text for smaller screens */
     }
   }
 
@@ -404,10 +416,18 @@ nav a:hover {
     #welcome-screen {
       flex-direction: column; /* Stack content vertically on very small screens */
       justify-content: center;
-      padding: 5px; /* Adjust padding */
+      padding: 10px; /* Adjust padding */
     }
 
     h1 {
-      font-size: 20px; /* Smaller heading for very small screens */
+      font-size: 24px; 
+    }
+
+    p {
+      font-size: 12px; 
+    }
+
+    #main-content {
+      padding: 10px;
     }
   }
