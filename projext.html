@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./passport_photo1.png">
+    <title>Sai Venkata Manieswar | Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    /* ... (Your existing CSS for body, header, etc.) */
+
+/* Modal Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-image: url('back.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-weight: 300;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+}
+h1{
+    text-decoration: underline;
+            text-underline-offset: 10px; 
+            text-decoration-thickness: 3.1px; 
+}
+
+.modal-content {
+    background-color: #111; /* Dark background for modal */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px;
+    border-radius: 10px;
+    color: #eee;
+}
+h2{
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.social-icons img{
+    width: 30px;
+    height: 30px;
+}
+img{
+    margin-left: 50px;
+    border-radius: 10px;
+    width: 500px;
+    
+    background: linear-gradient(180deg, #6A0DAD, #9A4DFF); /* Purple gradient */
+            color: white;
+            box-shadow: 1px 1px 10px 5px  #6A0DAD;
+    
+}
+button{
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+::-moz-selection { /* Code for Firefox */
+  color: red;
+  background: yellow;
+}
+
+::selection {
+  color: red;
+  background: yellow;
+}
+
+a:hover{
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+    background: linear-gradient(180deg, #6A0DAD, #9A4DFF); /* Purple gradient */
+         border: 2px  white solid;
+            box-shadow: 1px 1px 10px 3px  #6A0DAD;
+}
+a{
+    text-decoration: none;
+    font-size: larger;
+}
+hr{
+    margin: 20px;
+}
+p{
+    text-align: justify;
+}
+@media (max-width: 768px) {
+            .modal-content {
+                width: 90%;
+                max-width: unset; /* Remove max-width for smaller screens */
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            img {
+                margin: auto;
+                width: 350px; /* Make image responsive */
+            }
+
+            .social-icons {
+                flex-wrap: wrap; /* Wrap buttons on smaller screens */
+            }
+        }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            </div>
+        </header>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Projects</h1>
+            <h2>Me Tube</h2>
+
+           <img src="./me tube.png" alt="">
+           <p>Me Tube is a video streaming web application designed to provide users with a sleek, user-friendly interface for browsing and viewing video content. This project showcases a comprehensive application of front-end development skills, focusing on clean code, effective use of design frameworks, and version control best practices.
+           </p>
+           <SPAN>Skills: Html, Css, Bootstrap.</SPAN>
+            <div class="social-icons">
+                <button><a href="https://github.com/Manieswar2002/Manieswar2002-MEtube-project-uing-html-css-bootstrap" target="_blank">Github</a></button>
+                <button ><a href="https://manieswar2002.github.io/Manieswar2002-MEtube-project-uing-html-css-bootstrap/metube.html" target="_blank">Live Demo</a></button>
+            </div>
+<hr>
+            <h2>Online Order Platform</h2>
+
+            <img src="./online order.png" alt="">
+            <p>The Lungi Mama Online Ordering Website is a dynamic and responsive platform designed to streamline the food ordering process. This project highlights my ability to create a fully functional, user-friendly application using modern web technologies. With features such as real-time menu updates, secure payment integration, and responsive design, this platform ensures seamless navigation across devices. It highlights my ability to combine functionality with user-centric design, delivering an engaging and efficient solution for online food ordering.
+</p>
+            <SPAN>Skills: Html, Css, Bootstrap.</SPAN>
+             <div class="social-icons">
+                 <button><a href="https://github.com/Manieswar2002/Manieswar2002-online-platform-lungi-mama" target="_blank">Github</a></button>
+                 <button ><a href="https://manieswar2002.github.io/Manieswar2002-online-platform-lungi-mama/login.html" target="_blank">Live Demo</a></button>
+             </div>
+        </div>
+    </div>
+
+    <script >
+const modal = document.getElementById("myModal");
+const span = document.getElementsByClassName("close")[0];
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    modal.style.display = "block";
+});
+
+span.onclick = function() {
+    modal.style.display = "none";
+    // Redirect to index.html
+    window.location.href = "index.html";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        window.location.href = "index.html";
+    }
+}
+    </script>
+</body>
+</html>

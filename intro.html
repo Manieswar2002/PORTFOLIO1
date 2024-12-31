@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./passport_photo1.png">
+    <title>Sai Venkata Manieswar | Intro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    /* ... (Your existing CSS for body, header, etc.) */
+
+/* Modal Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-image: url('back.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-weight: 300;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+}
+
+.modal-content {
+    background-color: #111; /* Dark background for modal */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px;
+    border-radius: 10px;
+    color: #eee;
+}
+p{
+    text-align: justify;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.social-icons img{
+    width: 30px;
+    height: 30px;
+}
+h2{
+    text-decoration: underline;
+            text-underline-offset: 10px; 
+            text-decoration-thickness: 3.1px; 
+}
+img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  /* background: linear-gradient(180deg, #6A0DAD, #9A4DFF);  */
+            color: white;
+            box-shadow: 1px 1px 10px 3px  #6A0DAD;
+}
+::-moz-selection { /* Code for Firefox */
+  color: red;
+  background: yellow;
+}
+
+::selection {
+  color: red;
+  background: yellow;
+}
+
+@media (max-width: 768px) {
+            .modal-content {
+                width: 90%;
+                max-width: unset; /* Remove max-width for smaller screens */
+                padding: 15px;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            img {
+                width: 100%; /* Make image responsive */
+            }
+
+            .social-icons {
+                flex-wrap: wrap; /* Wrap buttons on smaller screens */
+            }
+        }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            </div>
+        </header>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="./passport_photo1.png" alt="">
+            <h2>INTRO</h2>
+            <p>My name is Manieswar, I come from bapatla, andhra pradesh,I have completed my b.tech - cse in the year 2024, in veltech University, with a CGPA of 8.12, Coming to my Technical Skills, I’m Good at -Html, Css, Javascript, Node Js, React js, Bootstrap, Python, SQL, AWS and Partially JAVA as Well. I have done 2 projects. Among which one is FACIAL FILTERS USING IMAGE PROCESSING where I used HTML, CSS, JAVASCRIPT. The next a Major project is being  DETECTION OF DEEPFAKE VIDEO USING LONG DISTANCE ATTENTION. I created these from a user friendly aspect. my Hobbies- I love to do: Photography,cricket, Travelling. my achievements :- Successful Project Completions. My Present goal is to get places in a good company, where I have good growth with continues learning .My long term goal is Advancement to leadership roles. Finally Speaking about my strengths, I am good in time management skills, where I prioritise and complete my work within time, I am a Quick Learner where I tend to Upskill myself whenever required.	
+</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/manieswar2002/" target="_blank"><img src="./linkedin.png" alt="LinkedIn"></a> <a href="https://github.com/Manieswar2002?tab=repositories" target="_blank"><img src="./github.png" alt="GitHub"></a>
+            </div>
+        </div>
+    </div>
+
+    <script >
+// script.js
+// script.js
+const modal = document.getElementById("myModal");
+const span = document.getElementsByClassName("close")[0];
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    modal.style.display = "block";
+});
+
+span.onclick = function() {
+    modal.style.display = "none";
+    // Redirect to index.html
+    window.location.href = "index.html";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        window.location.href = "index.html";
+    }
+}
+    </script>
+</body>
+</html>
